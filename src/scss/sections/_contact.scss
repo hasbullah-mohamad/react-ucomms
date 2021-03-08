@@ -1,0 +1,14 @@
+.section-contact {
+  padding-top: 77px;
+  padding-bottom: 65px;
+  background: linear-gradient(to right, $primary 0%, rgba($dark, 0.96) 100%);
+  .title {
+    font-weight: $font-weight-normal;
+    margin-bottom: 54px;
+  }
+  .action-form {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

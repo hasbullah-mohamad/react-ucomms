@@ -1,0 +1,28 @@
+.btn {
+  &.btn-primary {
+    background: linear-gradient(to right, $primary 0%, $secondary 100%);
+    position: relative;
+    border: 2px solid $primary;
+    color: $white;
+    &:hover {
+      background: linear-gradient(to left, $primary 0%, $secondary 100%);
+    }
+  }
+  &.btn-white {
+    background: $white;
+    color: $primary;
+    &:hover {
+      background: linear-gradient(to right, $primary 0%, $secondary 100%);
+      border: 2px solid $primary;
+      color: $white;
+      .icon {
+        svg {
+          path {
+            stroke: $white;
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}

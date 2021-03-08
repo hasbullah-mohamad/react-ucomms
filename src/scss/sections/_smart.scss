@@ -1,0 +1,24 @@
+.section-smart {
+  padding-top: 62px;
+  padding-bottom: 69px;
+  .title {
+    max-width: 455px;
+    margin-bottom: 20px;
+    @include media-breakpoint-down('md') {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .content {
+    max-width: 445px;
+    margin-bottom: 20px;
+    @include media-breakpoint-down('md') {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .featured-image {
+    max-width: 473px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+form {
+  .form-group {
+    margin-bottom: 40px;
+    position: relative;
+    .form-control {
+      &.is-invalid {
+        padding-right: 40px;
+        background-image: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      background-color: transparent;
+      border-radius: 0;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid rgba($gray-300, 0.3);
+      padding: 0.5rem 0.75rem;
+      padding-left: 0;
+      height: inherit;
+      color: $white;
+      font-weight: $font-weight-bold;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &:focus {
+        box-shadow: none;
+      }
+      &+label {
+        position: absolute;
+        transition: color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+        top: 8px;
+        left: 0;
+        font-weight: $font-weight-bold;
+        color: rgba($white, 0.5);
+      }
+      &:focus+label {
+        top: -15px;
+        color: $white;
+      }
+    }
+    .form-control[value]:not([value='']) {
+      &+label {
+        top: -15px;
+        color: $white;
+      }
+    }
+    textarea:not(:placeholder-shown)+label {
+      top: -15px;
+      color: $white;
+    }
+  }
+}

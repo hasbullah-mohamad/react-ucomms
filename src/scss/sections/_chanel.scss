@@ -1,0 +1,15 @@
+.section-chanel {
+  padding-top: 98px;
+  padding-bottom: 50px;
+  .title {
+    max-width: 578px;
+    margin-bottom: 20px;
+  }
+  .featured-image {
+    max-width: 360px;
+    width: 100%;
+    @include media-breakpoint-up('xl') {
+      margin-left: 95px;
+    }
+  }
+}

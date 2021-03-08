@@ -1,0 +1,10 @@
+.section-service {
+  padding-top: 87px;
+  padding-bottom: 65px;
+  .service-header {
+    margin-bottom: 61px;
+  }
+  &:nth-child(odd) {
+    background-color: $light;
+  }
+}

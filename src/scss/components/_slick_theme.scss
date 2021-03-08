@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+$slick-arrow-color: white !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+/* Slider */
+
+.slick-list {
+  .slick-loading & {
+    background: #fff center center no-repeat;
+  }
+}
+
+/* Dots */
+
+.slick-dots {
+  position: absolute;
+  top: 11px;
+  left: -190px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 190px;
+  height: 100%;
+  list-style-type: none;
+  @include media-breakpoint-down('xs') {
+    left: 0;
+    top: -275px;
+  }
+  li {
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    padding: 0;
+    background-color: rgba($white, 0.5);
+    cursor: pointer;
+    button {
+      width: 190px;
+      height: 50px;
+      border: 0;
+      background-color: transparent;
+      color: transparent;
+      display: block;
+      outline: none;
+      line-height: 0px;
+      font-size: 12px;
+      padding: 5px;
+      cursor: pointer;
+    }
+    &.slick-active {
+      background-color: transparent;
+    }
+  }
+}

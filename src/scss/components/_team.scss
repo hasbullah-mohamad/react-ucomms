@@ -1,0 +1,25 @@
+.team {
+  margin-bottom: 56px;
+  .team-image {
+    margin-bottom: 37px;
+    img {
+      width: 181px;
+      height: 181px;
+      border-radius: 181px;
+    }
+  }
+  .name {
+    font-weight: $font-weight-bold;
+    color: $primary;
+    font-size: 25px;
+  }
+  .position {
+    font-size: 25px;
+    font-weight: $font-weight-medium;
+    color: $dark;
+    margin-bottom: 24px;
+  }
+  .content {
+    margin-bottom: 20px;
+  }
+}

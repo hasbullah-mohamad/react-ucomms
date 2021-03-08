@@ -1,0 +1,59 @@
+@keyframes flip-logo {
+  0% {
+    transform: rotateX(360deg);
+  }
+
+  30% {
+    transform: rotateX(360deg);
+  }
+
+  50% {
+    transform: rotateX(180deg);
+  }
+
+  70% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.site-footer {
+  background-color: $dark;
+  padding: 20px 0;
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down('md') {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .nav-item {
+      color: $white;
+      font-size: $font-size-sm;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      @include media-breakpoint-down('xs') {
+        flex-wrap: wrap;
+      }
+      .flip-animation {
+        .anim-flip-logo {
+          color: rgba($white, .5) !important;
+          display: block;
+          perspective: 1em;
+          transform-style: preserve-3d;
+          transform: rotateX(0deg);
+          line-height: 28px;
+          &:hover {
+            animation: flip-logo 4s ease-in-out infinite;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

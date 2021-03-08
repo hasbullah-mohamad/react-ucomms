@@ -1,0 +1,66 @@
+// Bootstrap Variables
+$container-gutter-width: 22px;
+$gray-100:  #F9F9F9;
+$gray-300:  #D8D8D8;
+$dark:      #19043C;
+$body-color:  $dark;
+$primary:   #58139E;
+$secondary: #3023AE;
+$theme-colors: map-merge(
+  $theme-colors, (
+    "primary": $primary,
+    "dark":    $dark
+  )
+);
+$paragraph-margin-bottom:     20px;
+
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+$h1-font-size:                $font-size-base * 3.4375;
+$h2-font-size:                $font-size-base * 2.8125;
+$h3-font-size:                $font-size-base * 2.5;
+$h4-font-size:                $font-size-base * 1.8125;
+$h5-font-size:                $font-size-base * 1.5625;
+$h6-font-size:                $font-size-base;
+$btn-border-radius:           27px;
+$btn-padding-y:               5.5px;
+$btn-padding-x:               20px;
+$btn-font-size:               20px;
+$btn-font-weight:             600;
+$btn-border-width:            2px;
+
+$font-family-sans-serif: "ProximaNovaSoft";
+$font-family-base:            $font-family-sans-serif;
+// Application Variables
+$fonts: (
+  'ProximaNovaSoftRegular':       ( family: 'ProximaNovaSoft',        file: 'proxima-nova-soft-regular',      weight: 400, style: normal ),
+  'ProximaNovaSoftMedium':        ( family: 'ProximaNovaSoft',        file: 'proxima-nova-soft-medium',       weight: 500, style: normal ),
+  'ProximaNovaSoftSemibold':      ( family: 'ProximaNovaSoft',        file: 'proxima-nova-soft-semibold',     weight: 600, style: normal ),
+  'ProximaNovaSoftBold':          ( family: 'ProximaNovaSoft',        file: 'proxima-nova-soft-bold',         weight: 700, style: normal )
+);
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weights: (
+  'light': $font-weight-light,
+  'normal': $font-weight-normal,
+  'medium': $font-weight-medium,
+  'semibold': $font-weight-semibold,
+  'bold': $font-weight-bold
+);
+
+$headings: (
+  'h1': ('font-size': $h1-font-size, 'letter-spacing': -0.37px, 'line-height': 60px),
+  'h2': ('font-size': $h2-font-size, 'letter-spacing': -0.36px, 'line-height': 50px),
+  'h3': ('font-size': $h3-font-size, 'letter-spacing': -0.32px, 'line-height': 50px),
+  'h4': ('font-size': $h4-font-size, 'letter-spacing': -0.23px, 'line-height': 38px),
+  'h5': ('font-size': $h5-font-size, 'letter-spacing': -0.2px, 'line-height': 35px),
+  'h6': ('font-size': $h6-font-size, 'letter-spacing': 0, 'line-height': 1)
+);
+
+$font-sizes: (
+  'lg': ('font-size': $font-size-lg),
+  'md': ('font-size': $font-size-base * 1.125),
+  'base': ('font-size': $font-size-base),
+  'sm': ('font-size': $font-size-sm),
+);

@@ -1,0 +1,59 @@
+.home-hero {
+  background-image: url('../img/backgrounds/hero.png');
+  background-position: center;
+  background-size: cover;
+  padding-top: 187px;
+  padding-bottom: 155px;
+  @include media-breakpoint-down('md') {
+    background-position: 80%;
+  }
+  @include media-breakpoint-down('xs') {
+    padding-bottom: 40px;
+  }
+  .title {
+    font-weight: $font-weight-medium;
+    max-width: 460px;
+    margin-bottom: 32px;
+  }
+  .hero-carousel {
+    margin-bottom: 24px;
+    max-width: 475px;
+    border-radius: 5px;
+    background-color: rgba($white, 0.5);
+    width: 100%;
+    padding-left: 190px;
+    position: relative;
+    @include media-breakpoint-down('xs') {
+      padding-left: 0;
+    }
+    .slick-menu {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      padding-left: 0;
+      padding-bottom: 1px;
+      padding-top: 11px;
+      width: 190px;
+      border-radius: 5px;
+      background-color: $white;
+      .menu-item {
+        padding-left: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      @include media-breakpoint-down('xs') {
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.other-hero {
+  background-image: url('../img/backgrounds/other-hero.png');
+  background-position: center;
+  background-size: cover;
+  padding-top: 176px;
+  padding-bottom: 140px;
+}
